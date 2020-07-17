@@ -1,0 +1,184 @@
+/*IMPORT FONTS*/
+@font-face{
+    font-family: Bangers;
+    src: url(fonts/Bangers-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(img/pattern.png);
+}
+.remark{
+    color: #207ce5;
+    font-weight: bold;
+}
+/*
+Header
+*/
+#header{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, #207ce5, rgb(185, 216, 250));
+    box-shadow: 0px 0px 4px grey;
+}
+#menu-principal{
+    float: right;
+ }
+#menu-principal ul{
+    list-style-type: none;
+}
+#menu-principal ul li{
+    float: left;
+    margin: 20px;
+    line-height: 60px;
+}
+#menu-principal ul li a{
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: Bangers;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+#menu-principal ul li a:hover{
+    background-color: white;
+    color: #207ce5;
+    border-radius: 10px;
+}
+/*
+Section Principal
+*/
+
+#container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ebf9ff;
+    box-shadow: 0px 0px 4px grey;
+}
+#principal{
+    width: 100%;
+}
+h1{
+    font-size: 100px;
+    font-family: Bangers;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    letter-spacing: 2px;
+}
+#personal-photo{
+    border-radius: 100%;
+    display: block;
+    margin: 0 auto;
+    border: 5px solid #207ce5;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+/*
+Section About Me
+*/
+h2{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+    font-family: Bangers;
+}
+.parrafos{
+    text-align: center;
+    font-size: 20px;
+    padding: 50px;
+    letter-spacing: 1px;
+}
+/*
+Conocimientos
+*/
+#conocimientos-caja{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cajas{
+    width: 35%;
+    min-width: 350px;
+    border: 1px solid grey;
+    text-align: center;
+    margin: 30px;
+    box-shadow: 1px 1px 2px grey;
+    background-color: white;
+}
+h3{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Bangers;
+    color: #207ce5;
+}
+.cajas ul{
+    list-style-type: none;
+    margin: 30px;
+}
+.cajas ul li a{
+    color: #207ce5;
+}
+/*
+Factoria F5
+*/
+#factoria{
+    width: 100%;
+    text-align: center;
+}
+#factoria1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.enlaces img{
+float: left;
+border: 2px solid #207ce5;
+margin: 50px;
+cursor: pointer;
+box-shadow: 1px 1px 2px #207ce5;
+}
+.enlaces :hover{
+    transform: scale(1.5,1.5);
+}
+/*
+Footer
+*/
+#footer{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #207ce5, rgb(185, 216, 250));
+    box-shadow: 0px 0px 4px grey;
+    text-align: center;
+    color: black;
+    letter-spacing: 1px;
+}
+#footer p{
+    padding: 20px;
+}
+@media(max-width: 650px){
+#personal-photo{
+    width: 50%;
+    height: 50%;
+}
+}
+@media(max-width: 475px){
+    #menu-principal ul li a{
+        font-size: 14px;
+        padding: 10px;
+}
+h1{
+    font-size: 30px;
+}
+#principal h1 img{
+    width: 75px;
+    height: 75px;
+}
+}
